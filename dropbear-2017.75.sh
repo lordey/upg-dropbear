@@ -16,8 +16,6 @@ ls
 dpkg -i dropbear_2017.75-0.1_i386.deb
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
-service ssh restart
-service dropbear restart
 
 # konfigurasi dropbear
 cat > /etc/default/dropbear <<-END
